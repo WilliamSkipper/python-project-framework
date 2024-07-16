@@ -4,7 +4,10 @@ from utils.log import log
 from utils.config import load_config
 import os
 
-# Define application name
+# Fetch application version
+
+os.chdir(resource_path())
+
 config = load_config()
 version = '.'.join(map(str, config['version']))
 

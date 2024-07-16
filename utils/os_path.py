@@ -6,7 +6,7 @@ def os_path():
     # Determine the operating system
     current_os = platform.system()
 
-    # Define application name
+    # Fetch application name
     config = load_config()
     app_name = config['app_name']
 

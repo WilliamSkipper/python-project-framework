@@ -1,6 +1,6 @@
 {
-  "app_name": "Test 007",
-  "author": "William SKipper",
+  "app_name": "Python Project Framework",
+  "author": "William Skipper",
   "version": [0, 0, 1],
   "nested": {
     "key3": "value3"

@@ -1,8 +1,11 @@
-from utils.get_timestamp import get_timestamp
 from utils.os_path import os_path
+
 import os
+from datetime import datetime
 
 def log(content=str):
+    day = datetime.now().strftime('%d-%m-%Y')
+    time = datetime.now().strftime('%H:%M:%S')
     
     log_folder_path = os.path.join(os_path(), 'logs')
     
@@ -10,9 +13,6 @@ def log(content=str):
         pass
     else:
         os.makedirs(log_folder_path, exist_ok=True)
-    
-    
-    day, time = get_timestamp()
     
     log_file_name = f"{day}.txt"
     log_file_content= f"[{time}] {content}\n"
