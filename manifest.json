@@ -1,0 +1,8 @@
+{
+  "app_name": "Test 007",
+  "author": "William SKipper",
+  "version": [0, 0, 1],
+  "nested": {
+    "key3": "value3"
+  }
+}
